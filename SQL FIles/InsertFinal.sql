@@ -59,3 +59,5 @@ INSERT INTO sentto (seller_ID, payment_ID) VALUES ('2', '5');
 INSERT INTO bankaccount (acc_name, acc_num, balance) VALUES ('AK', '12345', '1000'), ('MA', '56789', '500'), ('AP', '34567', '500'), ('AD', '235266', '9000'), ('MH', '13524637', '5000');
 
 INSERT INTO has (acc_num, email) VALUES ('235266', 'adhakal@gmail.com'), ('12345', 'karkiaabishkar@gmail.com'), ('34567', 'ageaghae@gmial.com'), ('56789', 'm.agrawal@jacobs.de'), ('13524637', 'mhenry@gmail.com');
+
+INSERT INTO Administrator(email,u_password) VALUES ("admin@shopdrop.com","Shopdrop@777");

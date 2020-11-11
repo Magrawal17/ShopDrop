@@ -58,24 +58,6 @@ if ($conn->connect_error) {
                             $price=$row['price'];
                             echo "<h2>Product Name: ".$name."</h2>";
                             echo "<h2>Price: ".$price."$</h2>";
-
-
-                            echo "<br>";
-                            echo "<h2>This item was sold by </h2>";
-
-                            
-
-                            $sql2="SELECT U.U_name AS Seller_name,S.seller_ID AS seller_id
-                            FROM seller S, Sd_User U, puts_up PU, Product P
-                            WHERE S.seller_ID=PU.seller_ID AND S.email=U.email AND P.product_ID=$ProdID AND PU.product_ID=P.product_ID;";
-                            $data2=$conn->query($sql2);
-
-                            while($row = mysqli_fetch_array($data2)) 
-                            {
-                                $sname=$row['Seller_name'];
-                                $sids=$row['seller_id'];
-                                echo "<h2><u><a href='displayseller.php?sid=$sids'>$sname</a></u></h2>";
-                            }
                         ?>
                     </div>
                 </div>

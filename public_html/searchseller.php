@@ -24,7 +24,7 @@
                 <?php include 'Nav.php' ?>
                 <div class="searchtable2">
                     <div>
-                        <H1 class="smallheading2">SEARCH SELLERS BY CATEGORY</H1>
+                        <H1 class="smallheading2">SEARCH SELLER</H1>
                     </div>
                     <div>
                         <form action="searchsellerhelper.php" method="POST" class="l_form">
@@ -36,6 +36,7 @@
                                     <option value = "102">Clothes</option>
                                     <option value = "103">Others</option>
                                     <option value = "104">All the above</option>
+                                   
                               </select>
                               <br>
                               <button type="submit" class="form_button">Submit</button>

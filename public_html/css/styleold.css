@@ -129,12 +129,6 @@ a {
   text-align: center;
 }
 
-.smallheading3{
-  text-transform:uppercase;
-  text-align: center;
-}
-
-
 .product1{
   margin-left:12px;
   float: left;
@@ -330,4 +324,11 @@ a {
       background-color: rgb(0, 0, 0);
 }
 
+.errorline{
+  margin-left:330px;
+  padding-top: 100px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
 

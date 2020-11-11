@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    if(isset($_SESSION["duration"]) && (time()-$_SESSION["duration"]>1800))
+    //30 minutes auto logout
+    {
+        session_unset();
+        session_destroy();
+    }
+    if ($_SESSION["email"]!=1)
+    {
+        header("Location:login_page_admin.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +25,7 @@
 
     <link type="text/css" rel="stylesheet" href="css/styleold.css" />
     <link type="text/css" rel="stylesheet" href="css/maintenance.css" />
+    <link type="text/css" rel="stylesheet" href="css/loginform.css" />
 </head>
 <body>
     <a name="maintenance"></a>
@@ -38,9 +52,10 @@
                             <li><p><a href="paymentmethod.php#paymentmethod" class="main-header">Choose Payment Method</a></p></li>
                             <li><p><a href="has.php#has" class="main-header">User has Bank Account</a></p></li>
                             <li><p><a href="putsup.php#putsup" class="main-header">Seller Puts Up Products</a></p></li>
-                            <li><p><a href="belongsto.php#belongsto" class="main-header">Product belongs to a Category</a></p></li>
+                            <li><p><a href="belongsto.php#belongsto" class="main-header">Product belongs to a Category</a></p></li>                            
                         </ul>
                     </div>
+                    <button type="submit" class="register_button" onclick="window.location.href='logout.php'">Log Out</button>
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@
                 <?php include 'Nav.php' ?>
                 <div class="searchtable2">
                     <div>
-                        <H1 class="smallheading2">Search Customer Purchase History</H1>
+                        <H1 class="smallheading2">PURCHASE HISTORY</H1>
                     </div>
                     <div>
                         <form action="searchcustomerhelper.php" method="POST" class="l_form">
@@ -34,16 +34,14 @@
                                 <input type="email" class="login_input" placeholder="email" name="email" required>
 
                                 <label for="Psort"><b>Criteria to sort Price</b></label>
-                                <br>
                               <select name = "Psort">
                                 <option value = "ASC">Ascending</option>
                                 <option value = "DESC">Descending</option>
                               </select>
                               <br>
                             <label for="category"><b>Categories</b></label>
-                            <br>
                               <select name = "category">
-                                <option value = "104">All of the Category</option>
+                                <option value = "104">None</option>
                                 <option value = "100">Grocery</option>
                                 <option value = "101">Technology</option>
                                 <option value = "102">Clothes</option>

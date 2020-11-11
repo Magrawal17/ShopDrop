@@ -14,30 +14,37 @@
     <link type="text/css" rel="stylesheet" href="css/loginform.css" />
 </head>
 <body>
-    <a name="search"></a>
+    <a name="admin"></a>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <div id="container">
         <div id="content-wrap">
+
             <?php include 'header.php' ?>
+        
             <div>
-                <?php include 'Nav.php' ?>
-                <div class="searchtable2">
+                <?php include 'Nav.php' ?> 
+                <div class="loginfullcontainer">
                     <div>
-                        <H1 class="smallheading2">SEARCH PAGES</H1>
+                        <H1 class="smallheading2">ADMIN LOGIN</H1>
                     </div>
-                    <div>
-                    <ul>
-                            <li><p><a href="searchproduct.php#searchproduct" class="main-header">Search Product</a></p></li>
-                            <li><p><a href="searchcustomer#searchcustomer" class="main-header">Purchase History</a></p></li>
-                            <li><p><a href="searchseller.php#searchseller" class="main-header">Search Seller</a></p></li>  
-                    </ul>
+                    <div class="login_form">
+                        <form action="admin.php" method="POST" class="l_form">
+                            <div class="containerform">
+                              <label for="u_email"><b>Email</b></label>
+                              <input type="email" class="login_input" placeholder="Enter Email" name="u_email" required>
+                          
+                              <label for="psw"><b>Password</b></label>
+                              <input type="password" class="login_input" placeholder="Enter Password" name="psw" required>
+                          
+                              <button type="submit" class="form_button">Login</button>
+                            </div>
+                          </form>
                     </div>
                 </div>
             </div>
-        
         </div>
-
+ 
         <?php include 'footer.php' ?>
     <script src="js/top.js"></script>
     </div>

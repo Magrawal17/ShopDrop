@@ -7,6 +7,13 @@ CREATE TABLE Sd_User(
     PRIMARY KEY (email)
 );
 
+CREATE TABLE Administrator(
+    email VARCHAR(40),
+    u_password VARCHAR(40) NOT NULL,
+    PRIMARY KEY (email)
+);
+
+
 
 CREATE TABLE bankaccount(
     acc_name VARCHAR(40) NOT NULL,
@@ -135,6 +142,7 @@ PRIMARY KEY(product_ID)
 CREATE TABLE puts_up(
     seller_ID INTEGER,
     product_ID  INTEGER,
+    product ID should only be the unique thing not seller ID
     PRIMARY KEY(seller_ID,product_ID),
     FOREIGN KEY(seller_ID)
         REFERENCES seller(seller_ID)
